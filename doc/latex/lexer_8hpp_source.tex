@@ -1,0 +1,41 @@
+\hypertarget{lexer_8hpp_source}{}\doxysection{lexer.\+hpp}
+\label{lexer_8hpp_source}\index{src/lexer.hpp@{src/lexer.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_PAXO\_INI\_\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_PAXO\_INI\_\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{namespace }ini}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8     \textcolor{keyword}{namespace }lexer}
+\DoxyCodeLine{9     \{}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{14         \textcolor{keyword}{enum} TokType}
+\DoxyCodeLine{15         \{}
+\DoxyCodeLine{16             NEWLINE,         }
+\DoxyCodeLine{17             STRING,          }
+\DoxyCodeLine{18             EQUAL,           }
+\DoxyCodeLine{19             LEFT\_BRACKET,    }
+\DoxyCodeLine{20             RIGHT\_BRACKET,   }
+\DoxyCodeLine{21             END              }
+\DoxyCodeLine{22         \};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{27         \textcolor{keyword}{struct }\mbox{\hyperlink{structini_1_1lexer_1_1_tok}{Tok}}}
+\DoxyCodeLine{28         \{}
+\DoxyCodeLine{29             TokType \mbox{\hyperlink{structini_1_1lexer_1_1_tok_a78669079c271c2d804efc2abba193f5a}{type}};       }
+\DoxyCodeLine{30             std::string \mbox{\hyperlink{structini_1_1lexer_1_1_tok_ae83a421270d7051d6a759bf5947d072e}{value}};  }
+\DoxyCodeLine{31         \};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{preprocessor}{        \#ifdef DEBUG}}
+\DoxyCodeLine{39             std::string toktostr(\textcolor{keyword}{const} \mbox{\hyperlink{structini_1_1lexer_1_1_tok}{Tok}}\& tok);}
+\DoxyCodeLine{40 \textcolor{preprocessor}{        \#endif}}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{48         \mbox{\hyperlink{structini_1_1lexer_1_1_tok}{Tok}} nexttok(\textcolor{keyword}{const} std::string\& str, \textcolor{keywordtype}{int}\& i);}
+\DoxyCodeLine{49     \}}
+\DoxyCodeLine{50 \}}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* \_\_PAXO\_INI\_\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,127 @@
+\hypertarget{classini_1_1doc}{}\doxysection{ini\+::doc Class Reference}
+\label{classini_1_1doc}\index{ini::doc@{ini::doc}}
+
+
+This class represents an INI document.  
+
+
+
+
+{\ttfamily \#include $<$parser.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classini_1_1doc_aaf7c099370d1a3587cc72f247f0e5006}\label{classini_1_1doc_aaf7c099370d1a3587cc72f247f0e5006}} 
+{\bfseries doc} ()
+\begin{DoxyCompactList}\small\item\em Constructs an empty INI document. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classini_1_1doc_af753e5790be11aa3b974fe1ee113a682}{doc}} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Constructs an INI document from a string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classini_1_1doc_ab031d76634bb244879cb15d77e73b7f8}{parse}} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Parse an INI document from a string. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classini_1_1doc_a7aad704e24718541a14e5433e5b9d408}{get}} (const std\+::string \&section, const std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em Gets the value associated with a key in a section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classini_1_1doc_a8f262cb371c85928fe48fed58c8e0226}{set}} (const std\+::string \&section, const std\+::string \&key, const std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Sets the value associated with a key in a section. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classini_1_1doc_afbce53de74f2b01c9e2d003bc1963bb1}\label{classini_1_1doc_afbce53de74f2b01c9e2d003bc1963bb1}} 
+void {\bfseries clear} (void)
+\begin{DoxyCompactList}\small\item\em Clears the contents of the INI document. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classini_1_1doc_a7f5422aef532e8dcc8c6dc023c5e87d0}{tostring}} (void)
+\begin{DoxyCompactList}\small\item\em Converts the INI document to a string representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents an INI document. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classini_1_1doc_af753e5790be11aa3b974fe1ee113a682}\label{classini_1_1doc_af753e5790be11aa3b974fe1ee113a682}} 
+\index{ini::doc@{ini::doc}!doc@{doc}}
+\index{doc@{doc}!ini::doc@{ini::doc}}
+\doxysubsubsection{\texorpdfstring{doc()}{doc()}}
+{\footnotesize\ttfamily ini\+::doc\+::doc (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+Constructs an INI document from a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The string containing the INI data. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classini_1_1doc_a7aad704e24718541a14e5433e5b9d408}\label{classini_1_1doc_a7aad704e24718541a14e5433e5b9d408}} 
+\index{ini::doc@{ini::doc}!get@{get}}
+\index{get@{get}!ini::doc@{ini::doc}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily std\+::string ini\+::doc\+::get (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{section,  }\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Gets the value associated with a key in a section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em section} & The section name. \\
+\hline
+{\em key} & The key name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value associated with the key in the specified section. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classini_1_1doc_ab031d76634bb244879cb15d77e73b7f8}\label{classini_1_1doc_ab031d76634bb244879cb15d77e73b7f8}} 
+\index{ini::doc@{ini::doc}!parse@{parse}}
+\index{parse@{parse}!ini::doc@{ini::doc}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily void ini\+::doc\+::parse (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+Parse an INI document from a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The string containing the INI data to parse. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classini_1_1doc_a8f262cb371c85928fe48fed58c8e0226}\label{classini_1_1doc_a8f262cb371c85928fe48fed58c8e0226}} 
+\index{ini::doc@{ini::doc}!set@{set}}
+\index{set@{set}!ini::doc@{ini::doc}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void ini\+::doc\+::set (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{section,  }\item[{const std\+::string \&}]{key,  }\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the value associated with a key in a section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em section} & The section name. \\
+\hline
+{\em key} & The key name. \\
+\hline
+{\em value} & The value to set for the key in the specified section. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classini_1_1doc_a7f5422aef532e8dcc8c6dc023c5e87d0}\label{classini_1_1doc_a7f5422aef532e8dcc8c6dc023c5e87d0}} 
+\index{ini::doc@{ini::doc}!tostring@{tostring}}
+\index{tostring@{tostring}!ini::doc@{ini::doc}}
+\doxysubsubsection{\texorpdfstring{tostring()}{tostring()}}
+{\footnotesize\ttfamily std\+::string ini\+::doc\+::tostring (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Converts the INI document to a string representation. 
+
+\begin{DoxyReturn}{Returns}
+The INI document as a string. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/parser.\+hpp\item 
+src/parser.\+cpp\end{DoxyCompactItemize}

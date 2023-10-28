@@ -1,0 +1,48 @@
+\hypertarget{parser_8hpp_source}{}\doxysection{parser.\+hpp}
+\label{parser_8hpp_source}\index{src/parser.hpp@{src/parser.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_INI\_PARSER\_\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_INI\_PARSER\_\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#ifdef DEBUG}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{    \#include <iostream>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <unordered\_map>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{namespace }ini}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{16     \textcolor{keyword}{class }\mbox{\hyperlink{classini_1_1doc}{doc}}}
+\DoxyCodeLine{17     \{}
+\DoxyCodeLine{18         \textcolor{keyword}{public}:}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{23             \mbox{\hyperlink{classini_1_1doc_aaf7c099370d1a3587cc72f247f0e5006}{doc}}();}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{29             \mbox{\hyperlink{classini_1_1doc_aaf7c099370d1a3587cc72f247f0e5006}{doc}}(\textcolor{keyword}{const} std::string\& str);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{35             \textcolor{keywordtype}{void} \mbox{\hyperlink{classini_1_1doc_ab031d76634bb244879cb15d77e73b7f8}{parse}}(\textcolor{keyword}{const} std::string\& str);}
+\DoxyCodeLine{36         }
+\DoxyCodeLine{43             std::string \mbox{\hyperlink{classini_1_1doc_a7aad704e24718541a14e5433e5b9d408}{get}}(\textcolor{keyword}{const} std::string\& section, \textcolor{keyword}{const} std::string\& key);}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{51             \textcolor{keywordtype}{void} \mbox{\hyperlink{classini_1_1doc_a8f262cb371c85928fe48fed58c8e0226}{set}}(\textcolor{keyword}{const} std::string\& section, \textcolor{keyword}{const} std::string\& key, \textcolor{keyword}{const} std::string\& value);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{56             \textcolor{keywordtype}{void} \mbox{\hyperlink{classini_1_1doc_afbce53de74f2b01c9e2d003bc1963bb1}{clear}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{62             std::string \mbox{\hyperlink{classini_1_1doc_a7f5422aef532e8dcc8c6dc023c5e87d0}{tostring}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{preprocessor}{            \#ifdef DEBUG}}
+\DoxyCodeLine{65                 \textcolor{keyword}{friend} std::ostream\& operator<<(std::ostream\& os, \mbox{\hyperlink{classini_1_1doc}{doc}}\& document);}
+\DoxyCodeLine{66 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68         \textcolor{keyword}{private}:}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70             std::unordered\_map<std::string, std::unordered\_map<std::string, std::string>> data;}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72     \};}
+\DoxyCodeLine{73 \}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* \_\_INI\_PARSER\_\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}
