@@ -5,6 +5,10 @@
 #include "lexer.hpp"
 #include "utils.hpp"
 
+#if defined(OLD_PAXO) || defined(NEW_PAXO)
+    #include "../../interface/filestream.hpp"
+#endif
+
 namespace ini
 {
     doc::doc()
@@ -14,6 +18,20 @@ namespace ini
     {
         this->parse(str);
     }
+    
+    #if defined(OLD_PAXO) || defined(NEW_PAXO)
+
+    /**
+     * @brief Constructs an INI document from a filestream.
+     * @param filestream The filestream containing the INI data.
+    */
+    doc(const FileStream& filstream)
+    {
+        this->parse(filestream.read());
+    }
+
+    #endif
+    
 
     std::string doc::get(const std::string& section, 
                          const std::string& key)

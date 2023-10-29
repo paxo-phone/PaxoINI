@@ -5,6 +5,11 @@
     #include <iostream>
 #endif
 
+#if defined(OLD_PAXO) || defined(NEW_PAXO)
+    #include "../../interface/filestream.hpp"
+#endif
+
+
 #include <string>
 #include <unordered_map>
 
@@ -27,6 +32,16 @@ namespace ini
              * @param str The string containing the INI data.
              */
             doc(const std::string& str);
+
+            #if defined(OLD_PAXO) || defined(NEW_PAXO)
+
+            /**
+             * @brief Constructs an INI document from a filestream.
+             * @param filestream The filestream containing the INI data.
+            */
+            doc(const FileStream& filstream);
+
+            #endif
 
             /**
              * @brief Parse an INI document from a string.

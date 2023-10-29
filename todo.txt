@@ -1,2 +1,2 @@
 todo:
-    - make it compatible with paxo filesystem
+(empty for the moment)
