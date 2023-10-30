@@ -25,7 +25,7 @@ namespace ini
      * @brief Constructs an INI document from a filestream.
      * @param filestream The filestream containing the INI data.
     */
-    doc(const FileStream& filstream)
+    doc(const storage::FileStream& filstream)
     {
         this->parse(filestream.read());
     }
