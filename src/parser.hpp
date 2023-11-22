@@ -5,13 +5,14 @@
     #include <iostream>
 #endif
 
-#if defined(OLD_PAXO) || defined(NEW_PAXO)
+#if ESP32
     #include "../../interface/filestream.hpp"
 #endif
 
 
 #include <string>
 #include <unordered_map>
+#include <stdexcept>
 
 namespace ini
 {
