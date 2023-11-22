@@ -1,11 +1,12 @@
 #include <string>
 #include <unordered_map>
+#include <stdexcept>
 
 #include "parser.hpp"
 #include "lexer.hpp"
 #include "utils.hpp"
 
-#if defined(OLD_PAXO) || defined(NEW_PAXO)
+#if ESP32
     #include "../../interface/filestream.hpp"
 #endif
 
